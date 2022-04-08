@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a university project where the Euclidean distance calculation algorithm is put into practice to measure differences and similarities between examples of people or things",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
