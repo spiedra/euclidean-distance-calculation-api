@@ -1,0 +1,26 @@
+{
+  "name": "euclidean-distance-calculation-api",
+  "version": "1.0.0",
+  "description": "This is a university project where the Euclidean distance calculation algorithm is put into practice to measure differences and similarities between examples of people or things",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiedra/euclidean-distance-calculation-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiedra/euclidean-distance-calculation-api/issues"
+  },
+  "homepage": "https://github.com/spiedra/euclidean-distance-calculation-api#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
