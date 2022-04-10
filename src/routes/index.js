@@ -1,8 +1,8 @@
-import express from 'express'
-import { getDataFromXls } from '../controllers/index.js'
+var express = require('express')
+var getDataFromXls = require('../controllers/index')
 
 const router = express.Router()
 
 router.get('/', getDataFromXls)
 
-export default router
+module.exports = router

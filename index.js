@@ -1,8 +1,9 @@
-import express from "express";
-import cors from 'cors';
-import bodyParser from 'body-parser'
+const fs = require("fs")
+var express = require('express')
+var cors = require('cors')
+var bodyParser = require('body-parser')
 
-import xlsData from './src/routes/index.js'
+var xlsData = require('./src/routes/index.js')
 
 const app = express()
 app.set('port', process.env.PORT || 3000)
