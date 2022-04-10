@@ -11,11 +11,11 @@ const getDataFromSpreadsheet = () => {
         workbook.Sheets[sheetName]
       );
     }
-    
-    return worksheets
+
+    return worksheets;
   } catch (error) {
-      return error
+    return error;
   }
 };
 
-module.exports = getDataFromSpreadsheet
+module.exports = getDataFromSpreadsheet;

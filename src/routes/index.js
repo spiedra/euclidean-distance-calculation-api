@@ -1,8 +1,8 @@
-var express = require('express')
-var getDataFromXls = require('../controllers/index')
+var express = require("express");
+var getDataFromXls = require("../controllers/index");
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/', getDataFromXls)
+router.get("/", getDataFromXls);
 
-module.exports = router
+module.exports = router;
