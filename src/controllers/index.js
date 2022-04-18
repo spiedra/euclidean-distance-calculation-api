@@ -1,4 +1,4 @@
-const getDataFromSpreadsheet = require('../utils/index')
+const getDataFromSpreadsheet = require('../utils/getDataFromSpreadsheet')
 
 const getDataFromXls = async (req, res, next) => {
   try {

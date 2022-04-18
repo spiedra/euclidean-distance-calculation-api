@@ -10,12 +10,10 @@ const app = express()
 app.set('port', process.env.PORT || 3000)
 
 app.use(cors())
-app.use(bodyParser.json())
+app.use(bodyParser.json()) // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-app.use('/calculation', xlsData)
-app.get('/', (req, res, next) =>
-  res.send('Welcome to the Euclidean Distance Calculation API!')
-)
+app.use('/euclidean-distance-api', xlsData)
 app.all('*', (req, res, next) =>
   res.send("You've tried reaching a route that doesn't exist")
 )
