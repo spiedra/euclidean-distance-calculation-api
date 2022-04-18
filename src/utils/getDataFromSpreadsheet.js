@@ -1,8 +1,10 @@
 const XLSX = require('xlsx')
+const { join } = require('path')
 
 const getDataFromSpreadsheet = () => {
   try {
-    const workbook = XLSX.readFile('public/data.xlsx')
+    const workbook = XLSX.readFile(join(__dirname, '../../', 'data.xlsx'))
+
     // Convert the XLSX to JSON
     const worksheets = {}
     for (const sheetName of workbook.SheetNames) {
