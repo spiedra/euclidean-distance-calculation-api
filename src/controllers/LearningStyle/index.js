@@ -6,7 +6,7 @@ const getEuclideanDistanceCalculation = async (req, res, next) => {
     const inputs = req.body.inputs // Inputs from the form
     const dataFromDataBase = await getDataFromSpreadsheet().RecintoEstilo // Data from the excel
     const columnsToEvaluate = ['CA', 'EC', 'EA', 'OR'] // Columns of the excel
-    const requestedData = 'Estilo' // The result that I want to get
+    const requestedData = 'Estilo' // The result I want to get from excel
 
     res.status(200).json({
       result: getCalculationEuclideanDistance(dataFromDataBase, inputs, columnsToEvaluate, requestedData)
