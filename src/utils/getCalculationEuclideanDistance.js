@@ -6,7 +6,9 @@ const defaultValues = {
   CONVERGENTE: 4,
   F: 1,
   M: 2,
-  Promedio: 0
+  Promedio: 0,
+  Turrialba: 1,
+  Paraiso: 2
 }
 
 const getCalculationEuclideanDistance = (

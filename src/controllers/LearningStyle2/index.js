@@ -1,17 +1,17 @@
 const getCalculationEuclideanDistance = require('../../utils/getCalculationEuclideanDistance')
 const getDataFromSpreadsheet = require('../../utils/getDataFromSpreadsheet')
 
-const getStudentGenre = async (req, res, next) => {
+const getLearningStyle2 = async (req, res, next) => {
   try {
     const values = req.body.inputs // Inputs from the form
     const inputs = {
       Recinto: values.campus,
       Promedio: values.gpa,
-      Estilo: values.learningStyle
+      Sexo: values.genre
     }
     const dataFromDataBase = await getDataFromSpreadsheet().EstiloSexoPromedioRecinto // Data from the excel
-    const columnsToEvaluate = ['Recinto', 'Promedio', 'Estilo'] // Columns of the excel
-    const requestedData = 'Sexo' // The result I want to get from excel
+    const columnsToEvaluate = ['Recinto', 'Promedio', 'Sexo'] // Columns of the excel
+    const requestedData = 'Estilo' // The result I want to get from excel
 
     res.status(200).json({
       result: getCalculationEuclideanDistance(
@@ -26,4 +26,4 @@ const getStudentGenre = async (req, res, next) => {
   }
 }
 
-module.exports = getStudentGenre
+module.exports = getLearningStyle2
