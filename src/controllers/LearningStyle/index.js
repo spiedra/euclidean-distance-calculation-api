@@ -1,7 +1,7 @@
 const getCalculationEuclideanDistance = require('../../utils/getCalculationEuclideanDistance')
 const getDataFromSpreadsheet = require('../../utils/getDataFromSpreadsheet')
 
-const getEuclideanDistanceCalculation = async (req, res, next) => {
+const getLearningStyle1 = async (req, res, next) => {
   try {
     const inputs = req.body.inputs // Inputs from the form
     const dataFromDataBase = await getDataFromSpreadsheet().RecintoEstilo // Data from the excel
@@ -16,4 +16,4 @@ const getEuclideanDistanceCalculation = async (req, res, next) => {
   }
 }
 
-module.exports = getEuclideanDistanceCalculation
+module.exports = getLearningStyle1

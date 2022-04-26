@@ -1,3 +1,14 @@
+
+const defaultValues = {
+  ASIMILADOR: 1,
+  DIVERGENTE: 2,
+  ACOMODADOR: 3,
+  CONVERGENTE: 4,
+  F: 1,
+  M: 2,
+  Promedio: 0
+}
+
 const getCalculationEuclideanDistance = (
   dataFromDataBase,
   inputs,
@@ -13,7 +24,7 @@ const getCalculationEuclideanDistance = (
     let distance = 0 // Stores the temporal distance between the points
     for (const column of columnsToEvaluate) {
       // Iterates the columns to be evaluated according to the form
-      sum += Math.pow(inputs[column] - row[column], 2) // Sum of point differences
+      sum += Math.pow(inputs[column] - (defaultValues[row[column]] || row[column]), 2) // Sum of point differences
     }
 
     distance = Math.sqrt(sum) // Square root of the sum

@@ -1,6 +1,8 @@
 const express = require('express')
 const getDataFromXls = require('../controllers/Spreadsheet')
-const getEuclideanDistanceCalculation = require('../controllers/LearningStyle')
+
+const getLearningStyle1 = require('../controllers/LearningStyle')
+const getStudentCampus = require('../controllers/StudentHomeCampus')
 
 const router = express.Router()
 
@@ -8,6 +10,7 @@ const router = express.Router()
 router.get('/', getDataFromXls)
 
 // POST
-router.post('/learning-style/1/calculation', getEuclideanDistanceCalculation)
+router.post('/learning-style/1/calculation', getLearningStyle1)
+router.post('/student-campus/calculation', getStudentCampus)
 
 module.exports = router
