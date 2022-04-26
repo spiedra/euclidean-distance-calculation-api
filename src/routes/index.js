@@ -1,5 +1,5 @@
 const express = require('express')
-const getDataFromXls = require('../controllers/index')
+const getDataFromXls = require('../controllers/Spreadsheet')
 const getEuclideanDistanceCalculation = require('../controllers/LearningStyle')
 
 const router = express.Router()

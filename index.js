@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const euclideanDistanceRoutes = require('./src/routes/index.js')
 
 const app = express()
-app.set('port', process.env.PORT || 3000)
+app.set('port', process.env.PORT || 8080)
 
 app.use(cors())
 app.use(bodyParser.json())

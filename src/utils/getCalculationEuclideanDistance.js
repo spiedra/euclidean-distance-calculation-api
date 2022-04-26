@@ -1,4 +1,4 @@
-export const getCalculationEuclideanDistance = (
+const getCalculationEuclideanDistance = (
   dataFromDataBase,
   inputs,
   columnsToEvaluate,
@@ -20,9 +20,11 @@ export const getCalculationEuclideanDistance = (
     if (distance < closestToZero) {
       // Compares to the distance closest to zero
       closestToZero = distance
-      result = dataFromDataBase[requestedData] // The result is assigned according to the requested data
+      result = row[requestedData] // The result is assigned according to the requested data
     }
   }
 
   return result
 }
+
+module.exports = getCalculationEuclideanDistance
