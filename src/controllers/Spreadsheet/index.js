@@ -5,7 +5,7 @@ const getDataFromXls = async (req, res, next) => {
     const worksheets = await getDataFromSpreadsheet()
 
     res.status(200).json({
-      worksheet: worksheets.RecintoEstilo
+      worksheet: worksheets
     })
   } catch (error) {
     res.status(500).json({ message: error })

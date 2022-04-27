@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Eucludean Distance API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body{ font-family: "Roboto", sans-serif;}hr{border:1px solid green;width:80%;margin-top:0;margin-bottom:0}main{display:flex;flex-direction:column}main h1{align-self:center}main h2{margin-left:1em;font-size:1.8em}.container__route{margin-left:3em}.container__route h1{font-size:1.6em}.container__route-content{margin-left:1em}.container__route-content:nth-child(6){margin-bottom:1.8em}@media (min-width: 1024px){hr{width:90%}main h2{margin-left:1.5em;font-size:1.8em}.container__route{margin-left:4em}}
+    </style>
+    </style>
   </head>
   <body>
     <main>
-      <h1>hola</h1>
-    </main>
+      <h1>Eucludean Distance API</h1>
+      <h2>Endpoints:</h2>
+      <hr />
+      <div class="container__route">
+          <h1>GET</h1>
+          <div class="container__route-content" style="margin-bottom: 1.5rem;">
+              <h3>DataFromXls</h3>
+              <p>Description: Displays all the information in the database</p>
+              <code>GET: /euclidean-distance-api</code>
+          </div>
+      </div>
+      <hr />
+      <div class="container__route">
+          <h1>POST</h1>
+          <div class="container__route-content">
+              <h3>LearningStyle</h3>
+              <p>Description: Calculates the learning style</p>
+              <code>POST: /euclidean-distance-api/learning-style/1/calculation</code>
+          </div>
+          <div class="container__route-content">
+              <h3>LearningStyle2</h3>
+              <p>Description: Calculates the learning style</p>
+              <code>POST: /euclidean-distance-api/learning-style/2/calculation</code>
+          </div>
+          <div class="container__route-content">
+              <h3>StudentGender</h3>
+              <p>Description: Determines the student's gender</p>
+              <code>POST: /euclidean-distance-api/student-genre/calculation</code>
+            </div>
+          <div class="container__route-content">
+              <h3>StudentCampus</h3>
+              <p>Description: Determines the student's campus</p>
+              <code>POST: /euclidean-distance-api/student-campus/calculation</code>
+          </div>
+          <div class="container__route-content">
+              <h3>TeacherType</h3>
+              <p>Description: Determines the teacher's experience</p>
+              <code>POST: /euclidean-distance-api/teacher-type/calculation</code>
+          </div>
+          <div class="container__route-content" style="margin-bottom: 1.5rem;">
+            <h3>NetworkClassification</h3>
+            <p>Description: Determines the class of the network</p>
+            <code>POST: /euclidean-distance-api/network-classification/calculation</code>
+          </div>
+      </div>
+  </main>
   </body>
 </html>
