@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const { join } = require('path')
 
 const euclideanDistanceRoutes = require('./src/routes/index.js')
 
@@ -12,7 +13,9 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/euclidean-distance-api', euclideanDistanceRoutes)
-app.get('/', (req, res, next) => res.send('Welcome to the Eucludean Distance API'))
+app.get('/', function (req, res) {
+  res.sendFile(join(__dirname, './', 'index.html'))
+})
 app.all('*', (req, res, next) =>
   res.send("You've tried reaching a route that doesn't exist")
 )
