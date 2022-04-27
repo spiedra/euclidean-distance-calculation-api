@@ -1,14 +1,28 @@
 
 const defaultValues = {
   ASIMILADOR: 1,
-  DIVERGENTE: 2,
-  ACOMODADOR: 3,
+  ACOMODADOR: 2,
+  DIVERGENTE: 3,
   CONVERGENTE: 4,
-  F: 1,
-  M: 2,
+  M: 1,
+  F: 2,
   Promedio: 0,
   Turrialba: 1,
-  Paraiso: 2
+  Paraiso: 2,
+  NA: 3,
+  B: 1,
+  I: 2,
+  A: 3,
+  DM: 1,
+  ND: 2,
+  O: 3,
+  L: 1,
+  H: 2,
+  N: 1,
+  S: 2,
+  Low: 1,
+  Medium: 2,
+  High: 3
 }
 
 const getCalculationEuclideanDistance = (
@@ -18,7 +32,7 @@ const getCalculationEuclideanDistance = (
   requestedData
 ) => {
   let result // Saves the requested data
-  let closestToZero = 1000 // Saves the distance closest to zero
+  let closestToZero = 5000 // Saves the distance closest to zero
 
   for (const row of dataFromDataBase) {
     // Iterates each row of the excel file

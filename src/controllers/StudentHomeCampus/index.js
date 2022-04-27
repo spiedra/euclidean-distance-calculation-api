@@ -9,6 +9,8 @@ const getStudentCampus = async (req, res, next) => {
       Promedio: values.gpa,
       Estilo: values.learningStyle
     }
+
+    console.log(inputs)
     const dataFromDataBase = await getDataFromSpreadsheet().EstiloSexoPromedioRecinto // Data from the excel
     const columnsToEvaluate = ['Sexo', 'Promedio', 'Estilo'] // Columns of the excel
     const requestedData = 'Recinto' // The result I want to get from excel
